@@ -9,11 +9,11 @@ app.use(express.json());
 app.use('/api', weatherRoutes);
 
 app.use((req, res) => {
-    res.status(404).json({error: 'Not found'});
+  res.status(404).json({ error: 'Not found' });
 });
 
 app.use(errorHandler);
 
 app.listen(PORT, () => {
-    console.log(`Server listening on http://localhost:${PORT}`);
+  console.log(`Server listening on http://localhost:${PORT}`);
 });

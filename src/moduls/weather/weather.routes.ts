@@ -4,10 +4,6 @@ import { validateWeatherRequest, validateCity } from './middleware/validateCity.
 
 const router = express.Router();
 
-router.get(
-  '/weather',
-  validateWeatherRequest,   
-  validateCity,          
-  getWeatherController
-);
+router.get('/weather', validateWeatherRequest, validateCity, getWeatherController);
+
 export default router;

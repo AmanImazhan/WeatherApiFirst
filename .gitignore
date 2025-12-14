@@ -1,30 +1,29 @@
-# Зависимости — их НЕ пушим (они восстановятся по package-lock.json)
+# Dependencies
 node_modules/
 
-# Файл с секретами — туда ты кладёшь API-ключи
+# Environment files
 .env
 .env.local
 .env.development
 .env.production
 
-
-
-# Логи и временные файлы
+# Logs and temp files
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# Кэш и сборка
+# Build output
 .dist/
+dist/
 build/
 .cache/
 
-# ОС и редакторы
+# OS and editors
 .DS_Store
 Thumbs.db
 .vscode/
 .idea/
 
-# Локальные тесты
+# Local tests
 coverage/
