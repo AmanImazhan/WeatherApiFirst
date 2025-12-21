@@ -1,0 +1,19 @@
+version: '3.9'
+
+services:
+  weather-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: weather-api
+    ports:
+      - "3000:3000"                    
+    volumes:
+      - .:/app                    
+      - /app/node_modules             
+    env_file:
+      - .env                         
+    environment:
+      - NODE_ENV=development
+    restart: unless-stopped
+    command: npm run dev           
