@@ -1,19 +1,28 @@
 {
-  "name": "weather-api-project",
+  "name": "weather-api-ts",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
-  "type": "module",
+  "main": "dist/server.js",
   "scripts": {
-    "start": "node src/server.js"
+       "dev": "tsx watch src/server.ts",
+      "build": "tsc",
+      "start": "node dist/server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "type": "module",
   "dependencies": {
-    "axios": "^1.13.1",
+    "axios": "^1.13.2",
     "dotenv": "^17.2.3",
-    "express": "^5.1.0",
-    "express-validator": "^7.3.0"
+    "express": "^5.2.1",
+    "express-validator": "^7.3.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.0.2",
+    "nodemon": "^3.1.11",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
   }
 }

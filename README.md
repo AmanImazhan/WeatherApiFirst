@@ -1,19 +1,17 @@
-# Weather API — Clean Architecture (Node.js + Express)
+# Weather API (TypeScript)
 
-Простой и чистый бэкенд для получения погоды по названию города.
+REST API to get the weather for the city 
+Node.js + Express + TypeScript + OpenWeather API
 
-## Особенности
-- Чистая архитектура (слойность)
-- Валидация запросов
-- Централизованная обработка ошибок
-- Работа с внешним API (OpenWeatherMap)
-- Готов к продакшену и масштабированию
+---
 
-## Запуск
+## 📦 Stack
+- Node.js (ESM)
+- Express
+- TypeScript
+- Axios
+- OpenWeather API
 
-```bash
-git clone https://github.com/ТвойНик/weather-api-project.git
-cd weather-api-project
-cp .env.example .env        
-npm install
-npm run dev
+---
+
+## 📁 Project structure
